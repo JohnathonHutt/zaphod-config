@@ -117,7 +117,7 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans    &kp ESCAPE    &trans  &trans  &kp TAB   &kp UP_ARROW  &trans     &trans
+&trans  &trans  &trans    &kp ESCAPE    &bt BT_CLR_ALL  &trans  &kp TAB   &kp UP_ARROW  &trans     &trans
 &trans  &trans  &ws_find  &ws_prettier  &trans  &trans  &kp DOWN  &kp DOWN      &kp RIGHT  &trans
 &trans  &trans  &trans    &trans        &trans  &trans  &trans    &trans        &trans     &trans
                           &trans        &trans  &trans  &trans
