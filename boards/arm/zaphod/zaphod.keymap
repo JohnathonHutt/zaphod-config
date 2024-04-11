@@ -64,7 +64,7 @@
                 quick-tap-ms = <250>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
-                hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22>; // right hand
+                hold-trigger-key-positions = <7 8 9>; // right hand
             };
             hm_r: homerow_mods_right {
                 compatible = "zmk,behavior-hold-tap";
@@ -74,7 +74,7 @@
                 quick-tap-ms = <250>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
-                hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17>; // left hand
+                hold-trigger-key-positions = <1 2 3>; // left hand
             };
             sr: shift_layer {
                 compatible = "zmk,behavior-hold-tap";
@@ -94,7 +94,7 @@
                 quick-tap-ms = <250>;
                 flavor = "tap-preferred";
                 bindings = <&mo>, <&kp>;
-                hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22>; // right hand
+                hold-trigger-key-positions = <17 18 19 20>; // right hand
             };
             hl_r: homerow_layers_right {
                 compatible = "zmk,behavior-hold-tap";
@@ -104,7 +104,7 @@
                 quick-tap-ms = <250>;
                 flavor = "tap-preferred";
                 bindings = <&mo>, <&kp>;
-                hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17>; // left hand
+                hold-trigger-key-positions = <11 12 13 14>; // left hand
             };
             td: tapdance {
                 compatible = "zmk,behavior-hold-tap";
@@ -175,30 +175,30 @@
          AL1 {
          label = "Base";
                         bindings = <
-     &kp ESC  &hm_l LCTL L &hm_l LALT G &hm_l LGUI D  &none                                &none   &hm_r RGUI H  &hm_r LALT U  &hm_r RCTL C  &kp BSPC  &none
-     &hl_l NUM A  &hl_l SM2 R  &hl_l SM1 S  &hl_l SYS T  &none                             &none   &hl_r SYS N  &hl_r SM1 E  &hl_r SM2 I  &hl_r NUM O  &none
-     &none   &none   &none   &none   &none                                                 &none   &none   &none   &none  &none  &none 
-     &mt LC(LS(LALT)) SPC  &shrep LSHIFT 0                                                 &caps_alpha2macro  &alpha2macro &none
+     &kp ESC  &hm_l LCTL L &hm_l LALT G &hm_l LGUI D  &none                                &none   &hm_r RGUI H  &hm_r LALT U  &hm_r RCTL C  &kp BSPC  
+     &hl_l NUM A  &hl_l SM2 R  &hl_l SM1 S  &hl_l SYS T  &none                             &none   &hl_r SYS N  &hl_r SM1 E  &hl_r SM2 I  &hl_r NUM O  
+     &none   &none   &none   &none   &none                                                 &none   &none   &none   &none  &none   
+     &mt LC(LS(LALT)) SPC  &shrep LSHIFT 0                                                 &caps_alpha2macro  &alpha2macro 
                         >;
                 };
 
           AL2 {
           label = "Al2";
                          bindings = <
-      &kp ESC  &kp V  &kp W   &kp P   &none                                 &none   &kp M   &kp J   &kp F &kp BSPC   &none
-      &kp Q  &kp Z &kp X     &kp B    &none                                 &none   &kp K   &kp SQT &kp Y   &kp DOT  &none
-      &none   &none   &none   &none   &none                                 &none   &none   &none   &none  &none  &none
-      &sr LSHIFT AL1      &none                                             &none    &sl AL2U  &none
+      &kp ESC  &kp V  &kp W   &kp P   &none                                 &none   &kp M   &kp J   &kp F &kp BSPC   
+      &kp Q  &kp Z &kp X     &kp B    &none                                 &none   &kp K   &kp SQT &kp Y   &kp DOT  
+      &none   &none   &none   &none   &none                                 &none   &none   &none   &none  &none  
+      &sr LSHIFT AL1      &none                                             &none    &sl AL2U  
                          >;
                };
                 
          SM1 {
          label = "Code";
                         bindings = <
-     &kp ESC   &kp STAR     &kp LS(N3)  &kp DLLR  &none                                 &none   &kp LS(COMMA)  &kp LS(DOT)  &kp MINUS  &kp BSPC   &none
-     &kp BSLH   &kp GRAVE    &kp TILDE   &kp CARET  &none                               &none   &kp LBKT       &kp RBKT     &kp PIPE   &kp SLASH  &none
-     &none   &none   &none   &none   &none                                              &none   &none          &none        &none      &none      &none
-     &trans      &trans                                                                 &trans  &trans  &none
+     &kp ESC   &kp STAR     &kp LS(N3)  &kp DLLR  &none                                 &none   &kp LS(COMMA)  &kp LS(DOT)  &kp MINUS  &kp BSPC   
+     &kp BSLH   &kp GRAVE    &kp TILDE   &kp CARET  &none                               &none   &kp LBKT       &kp RBKT     &kp PIPE   &kp SLASH  
+     &none   &none   &none   &none   &none                                              &none   &none          &none        &none      &none      
+     &trans      &trans                                                                 &trans  &trans 
                         >;
                 };
         
